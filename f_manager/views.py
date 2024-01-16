@@ -6,19 +6,6 @@ def list_of_categories(request):
     categories = Categories.objects.all()
     return render(request, 'list-of-categories.html', {'categories': categories})
 
-# def add_categories(request, category_id=None):
-#     category = get_object_or_404(Categories, id=category_id) if category_id else None
-
-#     if request.method == 'POST':
-#         form = CategoryForm(request.POST, instance=category)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('list-of-categories')
-#     else:
-#         form = CategoryForm(instance=category)
-
-#     return render(request, 'add-categories.html', {'form': form})
-
 def add_categories(request, category_id=None):
     if category_id is not None:
         category = get_object_or_404(Categories, id=category_id)
