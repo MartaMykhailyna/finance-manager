@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+}
+.navbar{
+}
+.nav-item{
+    margin: 0 10px;
+}
+.nav-item a{
+    text-decoration: none;
+}
+.nav-link{
+    text-transform: capitalize;
+    color: white;
+}
+main{
+    margin: 30px;
+}
+.form-wrapper{
+    margin: 20px;
+    padding: 40px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+.form-wrapper div{
+    margin: 10px;
+    padding: 5px;
+}
+.form-wrapper label{
+    font-size: 20px;
+    text-align: right;
+}
+.form-wrapper select{
+    width: 20%;
+    margin: 0 10px;
+}
+.form-wrapper input{
+    margin-left: 10px;
+}
+.form-wrapper input[name=description]{
+    width: 60%;
+}
+.form__buttons-container{
+
+}
+.form__buttons-container input{
+    width: 80px;
+}
+.list-of-categories-form-wrapper{
+    padding: 30px;
+}
+.list-of-categories-form-wrapper input{
+    margin: 0;
+    width: 40%;
+}
+table{
+    margin-top: 30px;
+    width: 100%;
+}
+table tr, th, td{
+    border: 1px solid grey;
+    background-color: rgb(217, 217, 217);
+}
+th{
+    padding: 10px 20px;
+}
+.table-btn{
+    width: 40px;
+}
